@@ -11,10 +11,10 @@ ReactClass.prototype.render = function() {};
  * @param {*} newState 新状态
  */
 ReactClass.prototype.setState = function(newState) {
-  // 拿到ReactCompositeComponent的实例
-  // 在装载的时候保存
-  // 代码：this._reactInternalInstance = this
-  this._reactInternalInstance.receiveComponent(null, newState);
+    // 拿到ReactCompositeComponent的实例
+    // 在装载的时候保存
+    // 代码：this._reactInternalInstance = this
+    this._reactInternalInstance.receiveComponent(null, newState);
 };
 
 export default ReactClass;
